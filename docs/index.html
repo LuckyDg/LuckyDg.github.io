@@ -1,220 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content="Astro v4.16.8" />
-    <title>Welcome to Astro.</title>
-    <style>
-      :root {
-        --accent: 136, 58, 234;
-        --accent-light: 224, 204, 250;
-        --accent-dark: 49, 10, 101;
-        --accent-gradient: linear-gradient(
-          45deg,
-          rgb(var(--accent)),
-          rgb(var(--accent-light)) 30%,
-          white 60%
-        );
-      }
-      html {
-        font-family: system-ui, sans-serif;
-        background: #13151a;
-      }
-      code {
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-      }
-      .link-card[data-astro-cid-dohjnao5] {
-        list-style: none;
-        display: flex;
-        padding: 1px;
-        background-color: #23262d;
-        background-image: none;
-        background-size: 400%;
-        border-radius: 7px;
-        background-position: 100%;
-        transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-        box-shadow: inset 0 0 0 1px #ffffff1a;
-      }
-      .link-card[data-astro-cid-dohjnao5] > a[data-astro-cid-dohjnao5] {
-        width: 100%;
-        text-decoration: none;
-        line-height: 1.4;
-        padding: calc(1.5rem - 1px);
-        border-radius: 8px;
-        color: #fff;
-        background-color: #23262d;
-        opacity: 0.8;
-      }
-      h2[data-astro-cid-dohjnao5] {
-        margin: 0;
-        font-size: 1.25rem;
-        transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-      }
-      p[data-astro-cid-dohjnao5] {
-        margin-top: 0.5rem;
-        margin-bottom: 0;
-      }
-      .link-card[data-astro-cid-dohjnao5]:is(:hover, :focus-within) {
-        background-position: 0;
-        background-image: var(--accent-gradient);
-      }
-      .link-card[data-astro-cid-dohjnao5]:is(:hover, :focus-within)
-        h2[data-astro-cid-dohjnao5] {
-        color: rgb(var(--accent-light));
-      }
-      main[data-astro-cid-j7pv25f6] {
-        margin: auto;
-        padding: 1rem;
-        width: 800px;
-        max-width: calc(100% - 2rem);
-        color: #fff;
-        font-size: 20px;
-        line-height: 1.6;
-      }
-      .astro-a[data-astro-cid-j7pv25f6] {
-        position: absolute;
-        top: -32px;
-        left: 50%;
-        transform: translate(-50%);
-        width: 220px;
-        height: auto;
-        z-index: -1;
-      }
-      h1[data-astro-cid-j7pv25f6] {
-        font-size: 4rem;
-        font-weight: 700;
-        line-height: 1;
-        text-align: center;
-        margin-bottom: 1em;
-      }
-      .text-gradient[data-astro-cid-j7pv25f6] {
-        background-image: var(--accent-gradient);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-size: 400%;
-        background-position: 0%;
-      }
-      .instructions[data-astro-cid-j7pv25f6] {
-        margin-bottom: 2rem;
-        border: 1px solid rgba(var(--accent-light), 25%);
-        background: linear-gradient(
-          rgba(var(--accent-dark), 66%),
-          rgba(var(--accent-dark), 33%)
-        );
-        padding: 1.5rem;
-        border-radius: 8px;
-      }
-      .instructions[data-astro-cid-j7pv25f6] code[data-astro-cid-j7pv25f6] {
-        font-size: 0.8em;
-        font-weight: 700;
-        background: rgba(var(--accent-light), 12%);
-        color: rgb(var(--accent-light));
-        border-radius: 4px;
-        padding: 0.3em 0.4em;
-      }
-      .instructions[data-astro-cid-j7pv25f6] strong[data-astro-cid-j7pv25f6] {
-        color: rgb(var(--accent-light));
-      }
-      .link-card-grid[data-astro-cid-j7pv25f6] {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-        gap: 2rem;
-        padding: 0;
-      }
-    </style>
-  </head>
-  <body>
-    <main data-astro-cid-j7pv25f6>
-      <svg
-        class="astro-a"
-        width="495"
-        height="623"
-        viewBox="0 0 495 623"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-        data-astro-cid-j7pv25f6
-      >
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M167.19 364.254C83.4786 364.254 0 404.819 0 404.819C0 404.819 141.781 19.4876 142.087 18.7291C146.434 7.33701 153.027 0 162.289 0H332.441C341.703 0 348.574 7.33701 352.643 18.7291C352.92 19.5022 494.716 404.819 494.716 404.819C494.716 404.819 426.67 364.254 327.525 364.254L264.41 169.408C262.047 159.985 255.147 153.581 247.358 153.581C239.569 153.581 232.669 159.985 230.306 169.408L167.19 364.254ZM160.869 530.172C160.877 530.18 160.885 530.187 160.894 530.195L160.867 530.181C160.868 530.178 160.868 530.175 160.869 530.172ZM136.218 411.348C124.476 450.467 132.698 504.458 160.869 530.172C160.997 529.696 161.125 529.242 161.248 528.804C161.502 527.907 161.737 527.073 161.917 526.233C165.446 509.895 178.754 499.52 195.577 500.01C211.969 500.487 220.67 508.765 223.202 527.254C224.141 534.12 224.23 541.131 224.319 548.105C224.328 548.834 224.337 549.563 224.347 550.291C224.563 566.098 228.657 580.707 237.264 593.914C245.413 606.426 256.108 615.943 270.749 622.478C270.593 621.952 270.463 621.508 270.35 621.126C270.045 620.086 269.872 619.499 269.685 618.911C258.909 585.935 266.668 563.266 295.344 543.933C298.254 541.971 301.187 540.041 304.12 538.112C310.591 533.854 317.059 529.599 323.279 525.007C345.88 508.329 360.09 486.327 363.431 457.844C364.805 446.148 363.781 434.657 359.848 423.275C358.176 424.287 356.587 425.295 355.042 426.275C351.744 428.366 348.647 430.33 345.382 431.934C303.466 452.507 259.152 455.053 214.03 448.245C184.802 443.834 156.584 436.019 136.218 411.348Z"
-          fill="url(#paint0_linear_1805_24383)"
-          data-astro-cid-j7pv25f6
-        ></path>
-        <defs data-astro-cid-j7pv25f6>
-          <linearGradient
-            id="paint0_linear_1805_24383"
-            x1="247.358"
-            y1="0"
-            x2="247.358"
-            y2="622.479"
-            gradientUnits="userSpaceOnUse"
-            data-astro-cid-j7pv25f6
-          >
-            <stop stop-opacity="0.9" data-astro-cid-j7pv25f6></stop>
-            <stop offset="1" stop-opacity="0.2" data-astro-cid-j7pv25f6></stop>
-          </linearGradient>
-        </defs>
-      </svg>
-      <h1 data-astro-cid-j7pv25f6>
-        Welcome to
-        <span class="text-gradient" data-astro-cid-j7pv25f6>Astro</span>
-      </h1>
-      <p class="instructions" data-astro-cid-j7pv25f6>
-        To get started, open the directory
-        <code data-astro-cid-j7pv25f6>src/pages</code> in your project.<br
-          data-astro-cid-j7pv25f6
-        />
-        <strong data-astro-cid-j7pv25f6>Code Challenge:</strong> Tweak the
-        "Welcome to Astro" message above.
-      </p>
-      <ul role="list" class="link-card-grid" data-astro-cid-j7pv25f6>
-        <li class="link-card" data-astro-cid-dohjnao5>
-          <a href="https://docs.astro.build/" data-astro-cid-dohjnao5>
-            <h2 data-astro-cid-dohjnao5>
-              Documentation <span data-astro-cid-dohjnao5>&rarr;</span>
-            </h2>
-            <p data-astro-cid-dohjnao5>
-              Learn how Astro works and explore the official API docs.
-            </p>
-          </a>
-        </li>
-        <li class="link-card" data-astro-cid-dohjnao5>
-          <a href="https://astro.build/integrations/" data-astro-cid-dohjnao5>
-            <h2 data-astro-cid-dohjnao5>
-              Integrations <span data-astro-cid-dohjnao5>&rarr;</span>
-            </h2>
-            <p data-astro-cid-dohjnao5>
-              Supercharge your project with new frameworks and libraries.
-            </p>
-          </a>
-        </li>
-        <li class="link-card" data-astro-cid-dohjnao5>
-          <a href="https://astro.build/themes/" data-astro-cid-dohjnao5>
-            <h2 data-astro-cid-dohjnao5>
-              Themes <span data-astro-cid-dohjnao5>&rarr;</span>
-            </h2>
-            <p data-astro-cid-dohjnao5>
-              Explore a galaxy of community-built starter themes.
-            </p>
-          </a>
-        </li>
-        <li class="link-card" data-astro-cid-dohjnao5>
-          <a href="https://astro.build/chat/" data-astro-cid-dohjnao5>
-            <h2 data-astro-cid-dohjnao5>
-              Community <span data-astro-cid-dohjnao5>&rarr;</span>
-            </h2>
-            <p data-astro-cid-dohjnao5>
-              Come say hi to our amazing Discord community. ❤️
-            </p>
-          </a>
-        </li>
-      </ul>
+
+<head>
+  <meta charSet="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preload" as="image" href="/next.svg" />
+  <link rel="stylesheet" href="/_next/static/css/9e9ecc495be26977.css" data-precedence="next" />
+  <link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-af294872e571881a.js" />
+  <script src="/_next/static/chunks/4bd1b696-23516f99b565b560.js" async=""></script>
+  <script src="/_next/static/chunks/215-b85be9b139382405.js" async=""></script>
+  <script src="/_next/static/chunks/main-app-8d0ed4814620703e.js" async=""></script>
+  <script src="/_next/static/chunks/173-09c5dae138f93b4a.js" async=""></script>
+  <script src="/_next/static/chunks/app/page-3f1712f526a718cc.js" async=""></script>
+  <title>Create Next App</title>
+  <meta name="description" content="Generated by create next app" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16" />
+  <script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script>
+</head>
+
+<body class="__variable_1e4310 __variable_c3aa02 antialiased">
+  <div
+    class="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <main class="flex flex-col gap-8 row-start-2 items-center sm:items-start"><img alt="Next.js logo" width="180"
+        height="38" decoding="async" data-nimg="1" class="dark:invert" style="color:transparent" src="/next.svg" />
+      <ol class="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+        <li class="mb-2">Get started by editing<!-- --> <code
+            class="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">src/app/page.tsx</code>.</li>
+        <li>Save and see your changes instantly.</li>
+      </ol>
+      <div class="flex gap-4 items-center flex-col sm:flex-row"><a
+          class="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
+          href="https://vercel.com/new?utm_source=create-next-app&amp;utm_medium=appdir-template-tw&amp;utm_campaign=create-next-app"
+          target="_blank" rel="noopener noreferrer"><img alt="Vercel logomark" loading="lazy" width="20" height="20"
+            decoding="async" data-nimg="1" class="dark:invert" style="color:transparent" src="/vercel.svg" />Deploy
+          now</a><a
+          class="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+          href="https://nextjs.org/docs?utm_source=create-next-app&amp;utm_medium=appdir-template-tw&amp;utm_campaign=create-next-app"
+          target="_blank" rel="noopener noreferrer">Read our docs</a></div>
     </main>
-  </body>
+    <footer class="row-start-3 flex gap-6 flex-wrap items-center justify-center"><a
+        class="flex items-center gap-2 hover:underline hover:underline-offset-4"
+        href="https://nextjs.org/learn?utm_source=create-next-app&amp;utm_medium=appdir-template-tw&amp;utm_campaign=create-next-app"
+        target="_blank" rel="noopener noreferrer"><img aria-hidden="true" alt="File icon" loading="lazy" width="16"
+          height="16" decoding="async" data-nimg="1" style="color:transparent" src="/file.svg" />Learn</a><a
+        class="flex items-center gap-2 hover:underline hover:underline-offset-4"
+        href="https://vercel.com/templates?framework=next.js&amp;utm_source=create-next-app&amp;utm_medium=appdir-template-tw&amp;utm_campaign=create-next-app"
+        target="_blank" rel="noopener noreferrer"><img aria-hidden="true" alt="Window icon" loading="lazy" width="16"
+          height="16" decoding="async" data-nimg="1" style="color:transparent" src="/window.svg" />Examples</a><a
+        class="flex items-center gap-2 hover:underline hover:underline-offset-4"
+        href="https://nextjs.org?utm_source=create-next-app&amp;utm_medium=appdir-template-tw&amp;utm_campaign=create-next-app"
+        target="_blank" rel="noopener noreferrer"><img aria-hidden="true" alt="Globe icon" loading="lazy" width="16"
+          height="16" decoding="async" data-nimg="1" style="color:transparent" src="/globe.svg" />Go to nextjs.org →</a>
+    </footer>
+  </div>
+  <script src="/_next/static/chunks/webpack-af294872e571881a.js" async=""></script>
+  <script>(self.__next_f = self.__next_f || []).push([0])</script>
+  <script>self.__next_f.push([1, "2:\"$Sreact.fragment\"\n3:I[9275,[],\"\"]\n4:I[1343,[],\"\"]\n5:I[8173,[\"173\",\"static/chunks/173-09c5dae138f93b4a.js\",\"931\",\"static/chunks/app/page-3f1712f526a718cc.js\"],\"Image\"]\n6:I[3120,[],\"OutletBoundary\"]\n8:I[3120,[],\"MetadataBoundary\"]\na:I[3120,[],\"ViewportBoundary\"]\nc:I[6130,[],\"\"]\n1:HL[\"/_next/static/css/9e9ecc495be26977.css\",\"style\"]\n"])</script>
+  <script>self.__next_f.push([1, "0:{\"P\":null,\"b\":\"4iCXljPUXs6VnFNwqnkgI\",\"p\":\"\",\"c\":[\"\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$2\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/9e9ecc495be26977.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[\"$\",\"body\",null,{\"className\":\"__variable_1e4310 __variable_c3aa02 antialiased\",\"children\":[\"$\",\"$L3\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L4\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[]}]}]}]]}],{\"children\":[\"__PAGE__\",[\"$\",\"$2\",\"c\",{\"children\":[[\"$\",\"div\",null,{\"className\":\"grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]\",\"children\":[[\"$\",\"main\",null,{\"className\":\"flex flex-col gap-8 row-start-2 items-center sm:items-start\",\"children\":[[\"$\",\"$L5\",null,{\"className\":\"dark:invert\",\"src\":\"/next.svg\",\"alt\":\"Next.js logo\",\"width\":180,\"height\":38,\"priority\":true}],[\"$\",\"ol\",null,{\"className\":\"list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]\",\"children\":[[\"$\",\"li\",null,{\"className\":\"mb-2\",\"children\":[\"Get started by editing\",\" \",[\"$\",\"code\",null,{\"className\":\"bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold\",\"children\":\"src/app/page.tsx\"}],\".\"]}],[\"$\",\"li\",null,{\"children\":\"Save and see your changes instantly.\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex gap-4 items-center flex-col sm:flex-row\",\"children\":[[\"$\",\"a\",null,{\"className\":\"rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5\",\"href\":\"https://vercel.com/new?utm_source=create-next-app\u0026utm_medium=appdir-template-tw\u0026utm_campaign=create-next-app\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"children\":[[\"$\",\"$L5\",null,{\"className\":\"dark:invert\",\"src\":\"/vercel.svg\",\"alt\":\"Vercel logomark\",\"width\":20,\"height\":20}],\"Deploy now\"]}],[\"$\",\"a\",null,{\"className\":\"rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44\",\"href\":\"https://nextjs.org/docs?utm_source=create-next-app\u0026utm_medium=appdir-template-tw\u0026utm_campaign=create-next-app\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"children\":\"Read our docs\"}]]}]]}],[\"$\",\"footer\",null,{\"className\":\"row-start-3 flex gap-6 flex-wrap items-center justify-center\",\"children\":[[\"$\",\"a\",null,{\"className\":\"flex items-center gap-2 hover:underline hover:underline-offset-4\",\"href\":\"https://nextjs.org/learn?utm_source=create-next-app\u0026utm_medium=appdir-template-tw\u0026utm_campaign=create-next-app\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"children\":[[\"$\",\"$L5\",null,{\"aria-hidden\":true,\"src\":\"/file.svg\",\"alt\":\"File icon\",\"width\":16,\"height\":16}],\"Learn\"]}],[\"$\",\"a\",null,{\"className\":\"flex items-center gap-2 hover:underline hover:underline-offset-4\",\"href\":\"https://vercel.com/templates?framework=next.js\u0026utm_source=create-next-app\u0026utm_medium=appdir-template-tw\u0026utm_campaign=create-next-app\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"children\":[[\"$\",\"$L5\",null,{\"aria-hidden\":true,\"src\":\"/window.svg\",\"alt\":\"Window icon\",\"width\":16,\"height\":16}],\"Examples\"]}],[\"$\",\"a\",null,{\"className\":\"flex items-center gap-2 hover:underline hover:underline-offset-4\",\"href\":\"https://nextjs.org?utm_source=create-next-app\u0026utm_medium=appdir-template-tw\u0026utm_campaign=create-next-app\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"children\":[[\"$\",\"$L5\",null,{\"aria-hidden\":true,\"src\":\"/globe.svg\",\"alt\":\"Globe icon\",\"width\":16,\"height\":16}],\"Go to nextjs.org →\"]}]]}]]}],null,[\"$\",\"$L6\",null,{\"children\":\"$L7\"}]]}],{},null]},null],[\"$\",\"$2\",\"h\",{\"children\":[null,[\"$\",\"$2\",\"eU1o9i3uwjSFPYcyaGJqn\",{\"children\":[[\"$\",\"$L8\",null,{\"children\":\"$L9\"}],[\"$\",\"$La\",null,{\"children\":\"$Lb\"}],null]}]]}]]],\"m\":\"$undefined\",\"G\":[\"$c\",\"$undefined\"],\"s\":false,\"S\":true}\n"])</script>
+  <script>self.__next_f.push([1, "b:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n9:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"1\",{\"children\":\"Create Next App\"}],[\"$\",\"meta\",\"2\",{\"name\":\"description\",\"content\":\"Generated by create next app\"}],[\"$\",\"link\",\"3\",{\"rel\":\"icon\",\"href\":\"/favicon.ico\",\"type\":\"image/x-icon\",\"sizes\":\"16x16\"}]]\n"])</script>
+  <script>self.__next_f.push([1, "7:null\n"])</script>
+</body>
+
 </html>
